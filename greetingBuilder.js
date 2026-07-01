@@ -17,10 +17,11 @@ function getGreeting(timeOfDay) {
 }
 
 function createGreeting(firstname, lastname, timeOfDay) {
-  const greeting = getGreeting(timeOfDay);
   if (!firstname || !lastname) {
     return "Enter firstname and lastname";
   }
+
+  const greeting = getGreeting(timeOfDay);
 
   if (greeting === null) {
     return "Greeting should be morning, evening, or afternoon";
