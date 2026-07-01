@@ -12,7 +12,7 @@ function getGreeting(timeOfDay) {
   if (norm !== "morning" && norm !== "evening" && norm !== "afternoon") {
     return null;
   } else {
-    return `Good ${norm}`;
+    return `Good ${norm}, `;
   }
 }
 
@@ -26,7 +26,7 @@ function createGreeting(firstname, lastname, timeOfDay) {
   if (greeting === null) {
     return "Greeting should be morning, evening, or afternoon";
   } else {
-    return greeting + ", " + formatName(firstname, lastname);
+    return greeting + formatName(firstname, lastname);
   }
 }
 
